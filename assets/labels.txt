@@ -1,0 +1,35 @@
+Influenza
+Common Cold
+Tuberculosis
+Diabetes
+Chikungunya
+Asthma
+Heart Disease
+Allergies
+Pneumonia
+Gastroenteritis
+Arthritis
+Migraine
+Hypertension
+Sinusitis
+Chronic Obstructive Pulmonary Disease (COPD)
+Pneumothorax
+Hepatitis
+Peptic Ulcer
+Thyroid Disorders
+Epilepsy
+Multiple Sclerosis
+Parkinson's Disease
+Sleep Apnea
+Crohn's Disease
+Ulcerative Colitis
+Celiac Disease
+Sjögren's Syndrome
+Systemic Lupus Erythematosus
+Fibromyalgia
+Rheumatoid Arthritis
+Gout
+Psoriasis
+Eczema
+Scleroderma
+Myasthenia Gravis"
