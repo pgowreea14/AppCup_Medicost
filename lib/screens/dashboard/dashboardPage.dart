@@ -11,6 +11,8 @@ import 'package:medicalapp/screens/reminder/sleep_schedule_view.dart';
 import 'package:medicalapp/screens/virtual_assistance/chat_bot.dart';
 import 'package:medicalapp/utils/appBar_utils.dart';
 import 'package:provider/provider.dart';
+import 'package:shake/shake.dart';
+import 'package:telephony/telephony.dart';
 
 import '../../components/new/CategoryCard.dart';
 
@@ -23,6 +25,35 @@ class DashboardPage extends StatefulWidget {
 }
 
 class _DashboardPageState extends State<DashboardPage> {
+  final telephony = Telephony.instance;
+
+  @override
+  void initState() {
+    super.initState();
+
+    ShakeDetector detector = ShakeDetector.autoStart(
+      onPhoneShake: () async {
+        print("Hello 2");
+        final latitude = -20.2339325;
+        final longitude = 57.4952312;
+
+        // Get the current location
+        // Send SMS with location data
+        // telephony.sendSms(
+        //   to: "59182520",
+        //   message:
+        //       "Medical Emergency SOS, https://www.google.com/maps/search/?api=1&query=${latitude}%2C${longitude}",
+        // );
+
+        // Do stuff on phone shake
+      },
+      minimumShakeCount: 1,
+      shakeSlopTimeMS: 500,
+      shakeCountResetTime: 3000,
+      shakeThresholdGravity: 2.7,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final fontStyle = Provider.of<FontStyleProvider>(context).getTextStyle();

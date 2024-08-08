@@ -51,6 +51,8 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
         // Store the raw reminders to filter later
         allReminders = items;
 
+        print('ALL REMINDER : ${allReminders}');
+
         // Filter reminders based on the initial selected date
         filterRemindersByDate(_selectedDateAppBBar);
       } else {
